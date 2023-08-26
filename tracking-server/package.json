@@ -1,0 +1,28 @@
+{
+  "name": "tracking-server",
+  "version": "0.1.0",
+  "description": "The central tracking server, responsible for communicating with the probes, updating the DB, and sending real-time info to the frontend",
+  "main": "dist/index.js",
+  "scripts": {
+    "generate": "drizzle-kit generate:pg",
+    "push": "drizzle-kit push:pg",
+    "studio": "drizzle-kit studio",
+    "dev": "ts-node src"
+  },
+  "keywords": [],
+  "author": "Yuval Maron",
+  "dependencies": {
+    "@t3-oss/env-core": "^0.6.1",
+    "dotenv": "^16.3.1",
+    "drizzle-orm": "^0.28.5",
+    "postgres": "^3.3.5",
+    "uuid": "^9.0.0",
+    "zod": "^3.22.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.5.6",
+    "@types/uuid": "^9.0.2",
+    "drizzle-kit": "^0.19.13",
+    "ts-node": "^10.9.1"
+  }
+}
